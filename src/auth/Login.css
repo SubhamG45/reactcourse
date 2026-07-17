@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+.login-container{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.glass-card{
+    width:950px;
+    background:rgba(255,255,255,.18);
+    backdrop-filter:blur(20px);
+    border-radius:25px;
+    overflow:hidden;
+    display:flex;
+    box-shadow:0 25px 45px rgba(0,0,0,.25);
+}
+
+.left-side{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:rgba(255,255,255,.05);
+    padding:30px;
+}
+
+.left-side img{
+    width:100%;
+    max-width:350px;
+    animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+    50%{
+        transform:translateY(-15px);
+    }
+}
+
+.right-side{
+    flex:1;
+    background:#fff;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:60px;
+}
+
+.logo{
+    text-align:center;
+    color:#E1306C;
+    font-size:48px;
+    margin-bottom:40px;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+input{
+    padding:15px;
+    border:none;
+    background:#f4f4f4;
+    border-radius:12px;
+    font-size:15px;
+    transition:.3s;
+}
+
+input:focus{
+    outline:none;
+    border:2px solid #E1306C;
+    background:#fff;
+}
+
+button{
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:16px;
+    color:#fff;
+    background:blue;
+    transition:.3s;
+}
+
+button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+}
+
+.divider{
+    display:flex;
+    align-items:center;
+    margin:25px 0;
+}
+
+.divider span{
+    flex:1;
+    height:1px;
+    background:#ddd;
+}
+
+.divider p{
+    margin:0 15px;
+    color:#777;
+}
+
+.facebook-btn{
+    background:#1877F2;
+}
+
+.forgot{
+    margin-top:20px;
+    text-align:center;
+    text-decoration:none;
+    color:#1877F2;
+}
+
+.signup{
+    margin-top:35px;
+    text-align:center;
+}
+
+.signup a{
+    color:#E1306C;
+    text-decoration:none;
+    font-weight:600;
+}
+
+@media(max-width:900px){
+
+.glass-card{
+    flex-direction:column;
+}
+
+.left-side{
+    display:none;
+}
+
+.right-side{
+    padding:40px 25px;
+}
+
+}

@@ -29,7 +29,7 @@ export const Hr = styled.hr`
 
 export const Button = styled.button`
     padding:10px 20px;
-    background-color: ${ props => props.bgColor || "black" };
+    background-color: ${ props => props.bgColor };
     border:none;
     color:#ffffff;
     border-radius:5px;
@@ -38,4 +38,9 @@ export const Button = styled.button`
     margin:10px 0;
     color:black;
     border:1px solid white;
+    
+    &:hover{
+        color:black;
+        background-color:yellow;
+    }
 `
